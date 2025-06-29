@@ -35,7 +35,7 @@ public class CatGifController : ControllerBase
     }
 
     [HttpGet("gif")]
-    public async Task<IActionResult> SearchGif([FromQuery] string query, [FromQuery] string fact)
+    public async Task<IActionResult> SearchGif([FromQuery] string query)
     {
         try
         {
@@ -49,7 +49,7 @@ public class CatGifController : ControllerBase
             var history = new SearchHistory
             {
                 SearchDate = DateTime.Now,
-                Fact = fact,
+                Fact = query,
                 Query = query,
                 GifUrl = gifUrl ?? string.Empty
             };
