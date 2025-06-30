@@ -52,7 +52,6 @@ En caso de haber cambiado el puerto del backend del archivo CatGitController.cs,
     const API_BASE_URL = 'http://localhost: ->{NUEVO PUERTO}<- /api';
     
 5. EJECUTAR
-6. 
   5.1 En una consola ejecutar BACKEND .NET con el comando:
    
       cd Backend
