@@ -42,8 +42,8 @@ Este ultimo comando es para crear/actualizar la base de datos, si se desea modif
    * api/ : la ruta general/base,definida en el frontend.
    * fact : se optiene el valor del "fact"(dato) y en el frontend se manipula la información.
    * gif : usando el apikey y 3 palabras de FACT se optiene una url que tiene una foto, el url es enviado al frontend para ser enseñado.
-   *history : consulta con base de datos.
-   *history/delete : usando el ID de elementos especificos de history se envia petición de eliminar elemento de BD y la interfaz de historial.
+   * history : consulta con base de datos.
+   * history/delete : usando el ID de elementos especificos de history se envia petición de eliminar elemento de BD y la interfaz de historial.
 
 FRONTEND REACT VITE:
 
