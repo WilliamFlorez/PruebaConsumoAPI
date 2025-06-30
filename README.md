@@ -56,6 +56,7 @@ En caso de haber cambiado el puerto del backend del archivo CatGitController.cs,
   5.1 En una consola ejecutar BACKEND .NET con el comando:
       cd Backend
       dotnet run
+      
   5.2 En una consola diferente ejecutar Frontend REACT con el comando:
       cd FrontEnd
       npm run dev
