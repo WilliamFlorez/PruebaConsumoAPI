@@ -13,20 +13,23 @@ Prueba Técnica empresa Godoy Córdoba
    cd ProyectoAPI/Backend
    dotnet respore
 Para configurar el Backend se debe de ingresar a la carpeta Backend y descargar las siguientes dependencias para el funiconamiento del backend(Dependencias usadas tambien en el archivo dependencies.txt).
-  dotnet add package Pomelo.EntityFrameworkCore.MySql --version 8.0.6 
-  dotnet add package Microsoft.EntityFrameworkCore.Design --version 8.0.6
-  dotnet add package Microsoft.EntityFrameworkCore.Tools --version 8.0.6
-  dotnet add package System.Net.Http.Json --version 9.0.0  
 
- 2. Creación de Base de datos. se enciende MySQL de XAMPP y segunn las credenciales de usuario que tiene se modifica la variable DefaultConnection del archivo Backend/appsettings.json con las credenciales de usuario de PHPMyAdmin(las credenciales debe tener permisos para crear), ejemplo:
+       dotnet add package Pomelo.EntityFrameworkCore.MySql --version 8.0.6 
+       dotnet add package Microsoft.EntityFrameworkCore.Design --version 8.0.6
+       dotnet add package Microsoft.EntityFrameworkCore.Tools --version 8.0.6
+       dotnet add package System.Net.Http.Json --version 9.0.0  
+
+ 3. Creación de Base de datos. se enciende MySQL de XAMPP y segunn las credenciales de usuario que tiene se modifica la variable DefaultConnection del archivo Backend/appsettings.json con las credenciales de usuario de PHPMyAdmin(las credenciales debe tener permisos para crear), ejemplo:
     
-      "DefaultConnection":"Server=localhost;Database=catgifbd;User=root;Password=;"
+
+        "DefaultConnection":"Server=localhost;Database=catgifbd;User=root;Password=;"
     
 Ahora que se establecio el usuario se hace la migración de la BD con os siguientes comandos:
-        dotnet restore
-        dotnet build
-        dotnet ef migrations add InitialCreate 
-        dotnet ef database update  
+
+    dotnet restore
+    dotnet build
+    dotnet ef migrations add InitialCreate 
+    dotnet ef database update  
 Este ultimo comando es para crear/actualizar la base de datos, si se desea modificar la estructura de la tabla ver la carpeta Backend/Migrations -> AppDbContextModelSnapshot.cs
 
   2.1 (OPCIONAL) Modificar los puertos.  
